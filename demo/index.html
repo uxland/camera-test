@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Camera test</title>
+	<script src="/demo/settings.js"></script>
+	<link rel="import" href="../node_modules/@webcomponents/shadycss/apply-shim.html">
+	<link rel="import" href="../node_modules/@polymer/polymer/lib/elements/custom-style.js">
+	<script>
+        document.addEventListener(
+            "WebComponentsReady",
+            function componentsReady() {
+                document.removeEventListener("WebComponentsReady", componentsReady, false);
+                var script = document.createElement("script");
+                script.async = true;
+                script.src = '<%= htmlWebpackPlugin.files.chunks["main"].entry %>';
+                var refScript = document.body.getElementsByTagName("script")[0];
+                refScript.parentNode.insertBefore(script, refScript);
+            },
+            false
+        );
+	</script>
+</head>
+<body>
+<custom-style>
+	<style>
+		:root {
+			--uxl-mediaquery-phone: 599px;
+		}
+
+	
+	</style>
+</custom-style>
+<script defer src="<%= htmlWebpackPlugin.options.paths.webcomponents %>"></script>
+<h1>camera test</h1>
+<div class="content"></div>
+</body>
+</html>

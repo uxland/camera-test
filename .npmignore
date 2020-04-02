@@ -1,0 +1,9 @@
+test/
+src/
+tsconfig.json
+node_modules/
+README.md
+demo/
+gulpfile.js
+.travis.yml
+coverage/

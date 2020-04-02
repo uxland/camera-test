@@ -10,18 +10,6 @@ const createProConfig = config => ({
         use: [
           { loader: 'css-loader' },
           {
-            loader: 'postcss-loader',
-            options: {
-              ident: 'postcss',
-              plugins: loader => [
-                require('precss'),
-                require('postcss-cssnext'),
-                require('postcss-import'),
-                require('postcss-mixins')
-              ]
-            }
-          },
-          {
             loader: 'sass-loader',
             options: {
             }

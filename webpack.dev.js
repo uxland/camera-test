@@ -37,19 +37,6 @@ const createDevConfig = config => ({
             }
           },
           {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-              ident: 'postcss',
-              plugins: loader => [
-                require('precss'),
-                require('postcss-cssnext'),
-                require('postcss-import'),
-                require('postcss-mixins')
-              ]
-            }
-          },
-          {
             loader: 'sass-loader',
             options: {
               sourceMap: true,

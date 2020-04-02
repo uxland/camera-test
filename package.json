@@ -70,6 +70,8 @@
     "@polymer/polymer": "^3.3.0",
     "@uxland/uxl-style-utilities": "^1.0.17",
     "@uxland/uxl-utilities": "^3.3.9",
+    "cropperjs": "^1.5.6",
+    "image-capture": "^0.4.0",
     "lit-element": "^2.2.1",
     "lit-html": "^1.1.2"
   },

@@ -38,7 +38,7 @@
     "istanbul-instrumenter-loader": "^3.0.1",
     "jest": "^24.5.0",
     "jest-when": "^2.5.0",
-    "jsdom": "^11.11.0",
+    "jsdom": "^16.5.0",
     "mutation-observer": "^1.0.3",
     "node-sass": "^4.12.0",
     "postcss": "^7.0.24",
